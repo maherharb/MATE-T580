@@ -42,7 +42,8 @@ Prereq | Prior to our very first meeting, you are expected to: install R and Rst
 
 Students will be assessed according to the following scheme: 
 
-
+Component | Share
+--- | ---   
  DataCamp assignments	| 10% 
  Assignments | 	30%  
  In-class short quizzes |	10%
