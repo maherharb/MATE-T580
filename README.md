@@ -3,7 +3,7 @@
 Welcome to MATE-T580 course portal! This repository will serve as the home page for the course. Lectures, assignments, datasets for analysis, and solutions to assignments & quizzes will be posted here. Your first order of business should be to carefully read this page to learn about the course's content, structure, and week-by-week plan of study.  
 
 ## Overview
-MATE-T580 is designed as an introduction to data science for students with no prior knowledge of the subject. ***MATE-T580 covers all steps of the data science pipeline***: from getting and cleaning data, to performing exploratory analysis, producing meaningful visualizations, all the way to building predictive models. Students will be introduced to some of the most powerful machine learning algorithms used in the industry, including artificial neural network (ANN) and gradient boosting machine (GBM). Throughout the course, emphasis will be on the practical aspects of data science (as opposed to the theoretical/statistical aspect). Students will work with real datasets and will do a lot of coding using R/RStudio. 
+MATE-T580 is designed as an introduction to data science for students with no prior knowledge of the subject. ***MATE-T580 covers all steps of the data science pipeline***: from getting and cleaning data, to performing exploratory analysis, producing meaningful visualizations, all the way to building predictive models. Students will be introduced to some of the most powerful machine learning algorithms used in the industry, including artificial neural network (ANN) and gradient boosting machine (GBM). Throughout the course, emphasis will be on the practical aspects of data science (as opposed to the theoretical/statistical aspect). Students will work with real datasets and will do a lot of coding using R. 
 
 ## Prerequisites
 Some knowledge of R is required before taking the course. To start with, I suggest completing the following courses on DataCamp:
@@ -38,6 +38,6 @@ Prereq | Prior to our very first meeting, you are expected to: install R and Rst
 |9</BR>(5/28)|We’ll get introduced to text mining and we’ll learn how to perform machine learning on unstructured data (text).| TBD
 |10</BR>(6/4)|	We’ll conclude with a survey of advanced topics not discussed in this course, and with advice on how to continue your journey to become a data scientist.	|TBD
 
-
+## Getting started
 
 
