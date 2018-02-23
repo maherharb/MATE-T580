@@ -14,3 +14,6 @@ And this interactive course within R:
 - [swirl](http://swirlstats.com/students.html)
 
 Note that Drexel students who are registered for the course will receive a special invitation for accessing premium content on DataCamp to complete the prerequisites. **When signing up for DataCamp, use your Drexel shortname email** so that your account can be linked to your Drexel identity.   
+
+## Structure
+At its core, Data Science is a combination of coding and performing statistical analysis. As the focus of the course is on the R implementation of various Data Science techniques, the best way to learn is by doing actual coding in R. As such, the course is structured to ensure that students complete ~100 hours of coding through the 10-week duration of the course. 
