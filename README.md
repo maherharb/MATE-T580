@@ -70,7 +70,7 @@ swirl()
 
 ## About the Instructor
 
-I'm a [Assistant Professor of Physics](http://drexel.edu/materials/contact/faculty/harb/) at Drexel University. I have interest in Data Science, Machine Learning, and Text Mining, and prior consulting experience in these fields. I am also an avid competitor on Kaggle with the rank of Competition Master. 
+I'm an [Assistant Professor of Physics](http://drexel.edu/materials/contact/faculty/harb/) at Drexel University. I have interest in Data Science, Machine Learning, and Text Mining, and prior consulting experience in these fields. I am also an avid competitor on Kaggle with the rank of Competition Master. 
 
 
 
