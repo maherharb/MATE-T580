@@ -16,11 +16,11 @@ And this interactive course within R:
 Note that Drexel students who are registered for the course will receive a special invitation for accessing premium content on DataCamp to complete the prerequisites. ***When signing up for DataCamp, use your Drexel shortname email*** so that your account can be linked to your Drexel identity.   
 
 ## Course structure
-At its core, Data Science is a combination of coding and performing statistical analysis. As the focus of the course is on the R implementation of various Data Science techniques, the best way to learn is by doing lots of coding in R. As such, the course is structured to ensure that students complete ~100 hours of coding through the 10-week duration of the course. This is achieved through the following components:
-- Classroom-lab hybrid: Classroom time will be run as a lab rather than a traditional lecture. Students are required to have a laptop at all times with a R and Rstudio installed on. The instructor will present certain concepts and will assign tasks for students to work on. Discussion and collaborations is encouraged.  
-- Weekly DataCamp assignments (about 4 hours of duration each): These are a blend of mini video lectures and hands on exercises. The topics follow closely the topics we learn in class and thus reinforce in-class leaning and provide additional avenue for getting hands on practice in R.
-- Bi-weekly challenges: These are more challenging assignments that use real datasets and that test the students ability to apply their knowledge to a problem with little guidance.
-- Capstone project: 
+At its core, Data Science is a combination of coding and performing statistical analysis. As the focus of the course is on the R implementation of various Data Science techniques, the best way to learn is by doing lots of coding in R. As such, the course is structured to ensure that students complete ~100 hours of coding over the 10-week duration of the course. This is achieved through the following components:
+- ***Classroom-lab hybrid***: Classroom time will be run as a lab rather than a traditional lecture. Students are required to have a laptop at all times with a R and Rstudio installed on. The instructor will present certain concepts and will assign tasks for students to work on. Discussion and collaborations is encouraged.  
+- ***Weekly DataCamp assignments*** (~4 hours each): These are a blend of mini video lectures and hands on exercises. The topics follow closely the topics we learn in class and thus reinforce in-class leaning and provide additional avenue for getting hands on practice in R.
+- ***Bi-weekly challenges***: These are more challenging assignments that use real datasets and that test the students ability to apply their knowledge to a problem with little guidance.
+- ***Capstone project***: 
 
 
 
