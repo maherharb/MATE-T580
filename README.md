@@ -25,6 +25,7 @@ At its core, Data Science is a combination of coding and performing statistical 
 ## Course Plan
 
 <div class="course_plan">
+
 Week | Overview | DataCamp Assignment &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 --- | --- | -----  
 Prereq | Prior to our very first meeting, you are expected to: install R and Rstudio on a laptop that you will always have with you in class and complete some interactive learning exercises on DataCamp.|<ul><li>Introduction to R</li><li>Intermediate R</li><li>Swirl</li></ul>
@@ -38,6 +39,7 @@ Prereq | Prior to our very first meeting, you are expected to: install R and Rst
 |8</BR>(5/21)|	We'll get introduced to another very popular machine learning algorithm: Artificial neural network (ann). We'll learn how to perform ann learning in R using the nnet package.| TBD	
 |9</BR>(5/28)|We'll get introduced to text mining and we’ll learn how to perform machine learning on unstructured data (text).| TBD
 |10</BR>(6/4)|	We'll conclude with a survey of advanced topics not discussed in this course, and with advice on how to continue your journey to become a data scientist.	|TBD
+
 </div>
 
 ## Grading criteria
