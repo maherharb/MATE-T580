@@ -25,6 +25,7 @@ At its core, Data Science is a combination of coding and performing statistical 
 ## Course Plan
 
 Week | Overview | DataCamp Assignment
+--- | --- | ---  
 Prereq|Prior to our very first meeting, you are expected to: install R and Rstudio on a laptop that you will always have with you in class and complete some interactive learning exercises on DataCamp.|Introduction to R
 Intermediate R
 Intermediate R – Practice (Optional)
