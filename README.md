@@ -13,4 +13,4 @@ Some knowledge of R is required before taking the course. To start with, I sugge
 And this interactive course within R:
 - [swirl](http://swirlstats.com/students.html)
 
-Note that Drexel students who are registered for the course will receive a special invitation for accessing premium content on DataCamp to complete the prerequisites. When signing up for DataCamp, **use your Drexel shortname email** so that your account can be linked to your Drexel identity.   
+Note that Drexel students who are registered for the course will receive a special invitation for accessing premium content on DataCamp to complete the prerequisites. **When signing up for DataCamp, use your Drexel shortname email** so that your account can be linked to your Drexel identity.   
