@@ -44,15 +44,15 @@ Even before our first meeting, you have an opportunity to prepare for the course
 
 1. (Install R)[https://www.r-project.org/] on your computer
 2. (Install RStudio)[https://www.rstudio.com/] on your computer
-3. Open RStudio and install the swirl package through the command line by typing:
+3. Open RStudio and install the swirl package by typing through the console:
 ```
 install.packages("swirl")
 ```
-4. Load swirl by typing:
+4. Load swirl by typing through the console:
 ```
 library(swirl)
 ```
-5. Begin your learning journey by typing:
+5. Begin your learning journey by typing through the console:
 ```
 swirl()
 ```
