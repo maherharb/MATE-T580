@@ -44,11 +44,10 @@ Students will be assessed according to the following scheme:
 
 Component | Share
 --- | ---   
- DataCamp assignments	| 10% 
+ DataCamp assignments	| 20% 
+ In-class short quizzes |	20%
  Assignments | 	30%  
- In-class short quizzes |	10%
- Capstone project |	20%
-
+ Capstone project |	30%
 
 ## Getting started
 
