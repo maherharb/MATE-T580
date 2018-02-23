@@ -17,7 +17,7 @@ Note that Drexel students who are registered for the course will receive a speci
 
 ## Course structure
 At its core, Data Science is a combination of coding and performing statistical analysis. As the focus of the course is on the R implementation of various Data Science techniques, you learn best through hands on coding projects. As such, the course is structured to ensure that students complete ~100 hours of coding over the 10-week duration of the course. This is achieved through the following components:
-- ***Classroom-lab hybrid***: Classroom time will be run as a lab rather than a traditional lecture. Students are required to always have a laptop with R and Rstudio installed on, ready to use in class. The instructor will present certain concepts and the studnets will follow by working on related coding tasks.
+- ***Classroom-lab hybrid***: Classroom time will be run as a lab rather than a traditional lecture. Students are required to always have a laptop with R and Rstudio installed on, ready to use in class. The instructor will present certain concepts and the students will follow by working on related coding tasks. Within this environment it is expected that's we'll have lots of stimulating discussions and opportunities to collaborate.
 - ***Weekly DataCamp assignments*** (~4 hours each): A blend of mini video lectures and guided hands on exercises. The topics closely follow the topics we learn in class and thus reinforce in-class leaning and provide additional avenue for getting hands on practice in R.
 - ***Bi-weekly assignments***: More challenging assignments using real datasets. These assignments test the students ability to apply their subject knowledge to a problem with little guidance.
 - ***Capstone project***: TBD
