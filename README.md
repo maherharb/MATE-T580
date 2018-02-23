@@ -38,6 +38,16 @@ Prereq | Prior to our very first meeting, you are expected to: install R and Rst
 |9</BR>(5/28)|We’ll get introduced to text mining and we’ll learn how to perform machine learning on unstructured data (text).| TBD
 |10</BR>(6/4)|	We’ll conclude with a survey of advanced topics not discussed in this course, and with advice on how to continue your journey to become a data scientist.	|TBD
 
+## Grading criteria
+
+Students will be assessed according to the following scheme: 
+
+| DataCamp assignments	| 10% |
+| Assignments | 	30%  |
+| In-class short quizzes |	10%
+| Capstone project |	20%
+
+
 ## Getting started
 
 Even before our first meeting, you have an opportunity to prepare for the course. Here's what you can do to get started:
@@ -56,3 +66,5 @@ library(swirl)
 ```
 swirl()
 ```
+
+
