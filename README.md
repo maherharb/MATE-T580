@@ -11,4 +11,5 @@ Some knowledge of R is required before taking the course. To start with, I sugge
 - [Intermediate R](https://www.datacamp.com/courses/intermediate-r) (6 hours, Premium content)
 And this interactibe course within R:
 - [swirl](http://swirlstats.com/students.html)
+
 Note that students at Drexel who are registered for the course will receive a special invitation for accessing premium content on DataCamp to complete the prerequisites. When signing up for DataCamp, use your Drexel shortname email so that your account ca be linked to your Drexel identity.   
