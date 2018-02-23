@@ -26,11 +26,7 @@ At its core, Data Science is a combination of coding and performing statistical 
 
 Week | Overview | DataCamp Assignment
 --- | --- | ---  
-Prereq | Prior to our very first meeting, you are expected to: install R and Rstudio on a laptop that you will always have with you in class and complete some interactive learning exercises on DataCamp.|
-- Introduction to R
-- Intermediate R
-- Swirl
-
+Prereq | Prior to our very first meeting, you are expected to: install R and Rstudio on a laptop that you will always have with you in class and complete some interactive learning exercises on DataCamp.|<ul><li>Introduction to RM</li><li>Intermediate R</li><li>Swirl</li></ul>
 |1</BR>(4/2)|	We’ll learn how to manipulate data frames using the dplyr package. dplyr offers many advantages over equivalent functions in base R including performance, compactness of code, and readability of code.| Data Manipulation with dplyr
 |2</BR>(4/9)|	We’ll continue building on the work done in the previous week. However, we’ll start to pay more attention to the structure of the data and what it means to have ‘tidy data’.| Cleaning Data in R
 |3</BR>(4/16)|	We’ll get introduced to the different R packages used to extract data from csv files, webpages, and text files. We’ll also learn how to use regular expressions to parse text. |Importing data from flat files with utils</BR>readr & data.table</BR>Importing data from the web (Part 1)</BR>Importing data from the web (Part 2)
