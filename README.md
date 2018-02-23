@@ -42,8 +42,8 @@ Prereq | Prior to our very first meeting, you are expected to: install R and Rst
 
 Even before our first meeting, you have an opportunity to prepare for the course. Here's what you can do to get started:
 
-1. (Install R)[https://www.r-project.org/] on your computer
-2. (Install RStudio)[https://www.rstudio.com/] on your computer
+1. [Install R](https://www.r-project.org/) on your computer
+2. [Install RStudio](https://www.rstudio.com/) on your computer
 3. Open RStudio and install the swirl package by typing through the console:
 ```
 install.packages("swirl")
