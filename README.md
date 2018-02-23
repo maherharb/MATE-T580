@@ -42,6 +42,13 @@ Prereq | Prior to our very first meeting, you are expected to: install R and Rst
 
 </div>
 
+table tr td {
+  border: 1px solid #cccccc;
+  text-align: left;
+  margin: 0;
+  padding: 6px 13px;
+}
+
 ## Grading criteria
 
 Students will be assessed according to the following scheme: 
