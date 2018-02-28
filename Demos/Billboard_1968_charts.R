@@ -1,7 +1,7 @@
 # MATE-T580 Demo script
-# This script is for downloading top 200 albums data from Billboard,com for year 1968
-# the result is saved as .csv file in tw different formats (long and wide)
-# The dmeo is part of a Data Science lesson that tecahed students how to parse data from the web 
+# This script is for downloading top 200 albums data from Billboard.com for year 1968
+# the result is saved as .csv file in to different formats (long and wide)
+# The dmeo is part of a Data Science lesson that teaches students how to obtain and parse data from webpages 
 
 # load libraries
 library(XML)
@@ -18,12 +18,12 @@ setwd("C:/users/maher/Google Drive/Drexel/Teaching/Practical Data Science using 
 # Initialize empty data_frame that will hold chart data
 chart_long <- data_frame(Album=character(), Artist=character(), Week=numeric(), Rank=numeric())
 
-start_date <- as.Date("1968-01-06") # first chart top 200 chart in 1968 released on this date  
+start_date <- as.Date("1968-01-06") # first top 200 chart in 1968 released on this date  
 for (w in 1:52 ) { # loop over weeks
     current_date <- start_date + 7*(w-1) 
     urladdress <- paste0("https://www.billboard.com/charts/billboard-200/", current_date)
     
-    # the webpage
+    # get the webpage
     xmlpage <- htmlParse(rawToChar(GET(urladdress)$content))
     
     # extract album title and artist
