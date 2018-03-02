@@ -37,8 +37,8 @@ Prereq | Prior to our very first meeting, you are expected to: install R and Rst
 |6</BR>(5/7)|	We'll focus on the linear and logistic regression as the two baseline methods used respectively in regression and classification problems.|<ul><li>Multiple Regression</li><li>Logistic Regression</li><li>Case study: Italian restaurants in NYC</li></ul>
 |7</BR>(5/14)|We'll focus on tree-based machine learning methods to solve classification and regression type problems. We'll learn how to train models using random forest and xgboost (gradient boosting machine).|<ul><li>Machine Learning Toolbox</li></ul>
 |8</BR>(5/21)|	We'll get introduced to another very popular machine learning algorithm: Artificial neural network (ann). We'll learn how to perform ann learning in R using the nnet package.|<ul><li>Machine Learning with Tree-Based Models in R</li></ul>
-|9</BR>(5/28)|We'll get introduced to text mining and we’ll learn how to perform machine learning on unstructured data (text).| TBD
-|10</BR>(6/4)|	We'll conclude with a survey of advanced topics not discussed in this course, and with advice on how to continue your journey to become a data scientist.	|TBD
+|9</BR>(5/28)|We'll get introduced to text mining and we’ll learn how to perform machine learning on unstructured data (text).| <ul><li>Text Mining: Bag of Words</li></ul>
+|10</BR>(6/4)|	We'll conclude with a survey of advanced topics not discussed in this course, and with advice on how to continue your journey to become a data scientist.	|*No DataCamp assignment final week*
 
 </div>
 
