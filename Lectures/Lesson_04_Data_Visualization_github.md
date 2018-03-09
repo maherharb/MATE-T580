@@ -229,7 +229,7 @@ Now is your turn to practice!
 
 Extending on the analysis done on the iris dataset, generate a facet plot that shows sepal and petal dimensions in two separate plots. Each of the two plots is a scatterplot of width vs. length, with the color of the data point indicating the iris species.
 
-Hint: The `iris` dataset as loaded directly in R is not in the proper fromat to do the required analysis. For your convenience, I created this alternative `tidy` version:
+Hint: The `iris` dataset as loaded directly in R is not in the proper format to do the required analysis. For your convenience, I created this alternative `tidy` version:
 
 `https://raw.githubusercontent.com/mharb75/MATE-T580/master/Datasets/iris_alt.csv`
 
@@ -373,7 +373,7 @@ ggplot(data = mtcars, aes(x = wt, y = mpg, col = factor(cyl))) +
 Barplots with `ggplot`
 ----------------------
 
-The very basic basic purpose of a barplot is to count:
+The very basic purpose of a barplot is to count:
 
 ``` r
 ggplot(data = mtcars, aes(x = factor(cyl))) +
