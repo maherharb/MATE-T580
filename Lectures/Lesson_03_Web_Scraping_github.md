@@ -377,7 +377,7 @@ Flash-forward
 
 In Lesson 9, we'll learn how to extract predictive value from text
 
-![](images/trump_tweets.png)
+![](images/Trump_tweets.png)
 
 Text processing
 ---------------
