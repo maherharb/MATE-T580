@@ -111,7 +111,7 @@ xmlpage <- htmlParse(rawToChar(GET(url)$content))
 length(capture.output(xmlpage))
 ```
 
-    ## [1] 10243
+    ## [1] 10244
 
 ``` r
 capture.output(xmlpage)[1:4]
@@ -165,9 +165,9 @@ head(artist,6)
     ## [3] "\nThe Monkees\n"        "\nThe Beatles\n"       
     ## [5] "\nSoundtrack\n"         "\nSoundtrack\n"
 
-The number of albums do not match the number of artists!
+The number of albums does not match the number of artists!
 
-We have to find out why...
+We must find out why...
 
 Extracting data from Billboard.com
 ----------------------------------
@@ -289,7 +289,7 @@ Is web scraping legal?
 
 -   On the one hand, search engines such as Google and Bing rely on web scraping to catalogue the web
 
--   At the same time, many websites terms of service prohibit unathorized scraping
+-   At the same time, many websites terms of service prohibit unauthorized scraping
 
 From the perspective of data science, be mindful that:
 
@@ -382,7 +382,7 @@ In Lesson 9, we'll learn how to extract predictive value from text
 Text processing
 ---------------
 
--   Eventhough we were able to capture data from a webpage into an R data frame, our job is not done
+-   Even though we were able to capture data from a webpage into an R data frame, our job is not done
 
 -   Textual data is messy by default; we might need to do some cleaning to make it more presentable
 
@@ -394,7 +394,7 @@ Text processing
 
 -   And in the twitter data, some tweets had web addresses included within the text
 
--   We are not able yet to do full treatement of textual data, but we can do some gentle processing with Base R and `stringr`
+-   We are not able yet to do full treatment of textual data, but we can do some gentle processing with Base R and `stringr`
 
 The `gsub` function
 -------------------
@@ -464,7 +464,7 @@ album[result]
 The `grepl` function
 --------------------
 
-`grepl` is equivalent to `grep` but returns a boolean vector instead of indices of matched elements:
+`grepl` is equivalent to `grep` but returns a Boolean vector instead of indices of matched elements:
 
 ``` r
 result <- grep("beatles", artist, ignore.case = TRUE)
@@ -524,7 +524,7 @@ grep("^[a-z0-9]+$", album, ignore.case = TRUE,
 Regular expressions
 -------------------
 
-Albums that have a repreated word:
+Albums that have a repeated word:
 
 ``` r
 grep("\\b([a-z0-9]+) \\1", album, ignore.case = TRUE, 
@@ -544,8 +544,7 @@ grep("^the [a-z0-9]+$", artist, ignore.case = TRUE,
     ##  [4] "The Turtles"     "The Temptations" "The Cowsills"   
     ##  [7] "The Rascals"     "The Byrds"       "The Association"
     ## [10] "The Lettermen"   "The Miracles"    "The Animals"    
-    ## [13] "The Ventures"    "The Hollies"     "The Who"        
-    ## [16] "The Yardbirds"
+    ## [13] "The Ventures"    "The Who"         "The Yardbirds"
 
 Now is your turn to practice!
 -----------------------------
@@ -647,4 +646,4 @@ Concluding remarks
 
 -   But we are able to do some basic text manipulation with Base R and `stringr`
 
--   We were introduced to regular expressiosn as a way to efficiently search for patterns in text
+-   We were introduced to regular expressions as a way to efficiently search for patterns in text
