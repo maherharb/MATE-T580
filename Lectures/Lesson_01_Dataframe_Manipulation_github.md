@@ -1,6 +1,6 @@
 Practical Data Science using R</BR>Lesson 1: Data Frame Manipulation with `dplyr`
 ================
-Maher Harb, PhD
+Maher Harb, PhD</BR>
 Assistant Professor of Physics</BR>Drexel University
 
 About the lesson
