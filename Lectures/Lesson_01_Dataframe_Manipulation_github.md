@@ -3,12 +3,6 @@ Practical Data Science using R</BR>Lesson 1: Data Frame Manipulation with `dplyr
 Maher Harb, PhD
 Assistant Professor of Physics</BR>Drexel University
 
-<style>
-.codefont pre {
-    font-size: 18px;
-    line-height: 18px;
-}
-</style>
 About the lesson
 ----------------
 
