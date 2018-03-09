@@ -725,10 +725,10 @@ Performing an `anti_join` on the two datasets
     ## # A tibble: 4 x 3
     ##   month     D Temperature
     ##   <chr> <dbl>       <dbl>
-    ## 1   Apr     5        34.5
-    ## 2   Nov    13        51.0
-    ## 3   Sep     6        75.5
-    ## 4   Jan     6        33.0
+    ## 1   May    27        80.0
+    ## 2   Sep     6        75.5
+    ## 3   Nov    12        43.5
+    ## 4   Nov    13        51.0
 
     ## [1] 9 3
 
