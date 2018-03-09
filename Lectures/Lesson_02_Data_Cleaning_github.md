@@ -27,7 +27,7 @@ Tidy data is a standard way of mapping the meaning of a dataset to its structure
 
 -   Each type of observational unit forms a table
 
-Preparing the data in this standarized format makes the exploration and analyis processes easier by taking advantage of all the great tools designed to work with the tidy format
+Preparing the data in this standardized format makes the exploration and analysis processes easier by taking advantage of all the great tools designed to work with the tidy format
 
 Let's take a look at some messy data and try to clean it...
 
@@ -156,9 +156,9 @@ Billboard top 200
     ## 4                     Beat Of The Brass     NA     NA     NA     NA
     ## 5                              Bookends     NA     NA     NA     NA
 
-Billboard data is stored in a wide format because it is a convenient form, from the prespective of data entry
+Billboard data is stored in a wide format because it is a convenient form, from the perspective of data entry
 
-To tidy up the data, we need to map the infromation on the ranking of songs for each week into two new variables: `week` and `rank`
+To tidy up the data, we need to map the information on the ranking of songs for each week into two new variables: `week` and `rank`
 
 There's just the right function for that in `tidyr` package: `gather`
 
@@ -246,7 +246,7 @@ In Lesson 4, we'll learn how to generate plots using `ggplot`
 Now is your turn to practice!
 -----------------------------
 
-The NYC weather dataset contains average daily temperatures recorded in NYC (central park) in 2016. The dataset is loacted at:
+The NYC weather dataset contains average daily temperatures recorded in NYC (central park) in 2016. The dataset is located at:
 
 `https://raw.githubusercontent.com/mharb75/MATE-T580/master/Datasets/nyc_weather_wide.csv`
 
@@ -355,7 +355,7 @@ df_billboard %>% na.omit() %>% select(Album, Artist)
 Missing values
 --------------
 
-using `na.omit` on the long verison of the billboard dataset is acceptable, as each observation represents the ranking of a track during a specific week only
+using `na.omit` on the long version of the billboard dataset is acceptable, as each observation represents the ranking of a track during a specific week only
 
 ``` r
 dim(df_billboard2)
@@ -423,7 +423,7 @@ Aliens
     ## 2   Zen    134    Red
     ## 3   Nya    128 Orange
 
-Eventhough the data is tidy, many machine learning algorithms are not able to deal with non-numeric variables
+Even though the data is tidy, many machine learning algorithms are not able to deal with non-numeric variables
 
 One hot encoding
 ----------------
@@ -448,7 +448,7 @@ Note that it is recommended to delete one of the eye color values, since it is r
 Joining datasets
 ----------------
 
--   Sometimes the obervations of interest are spread over multiple tables
+-   Sometimes the observations of interest are spread over multiple tables
 
 -   This is often the case with data retrieved from a relational database
 
@@ -458,8 +458,8 @@ Joining datasets
 
 -   the `dplyr` family of `join` functions makes it easy to join data from different datasets
 
-Chocolate consmption and Nobel
-------------------------------
+Chocolate consumption and Nobel
+-------------------------------
 
 Say we're interested in exploring the relationship between chocolate consumption and nobel prizes on a country level. The data of interest resides in two separate datasets
 
@@ -480,8 +480,8 @@ dim(df_nobel)
 
 Let's take a look at the data...
 
-Chocolate consmption and Nobel
-------------------------------
+Chocolate consumption and Nobel
+-------------------------------
 
 ``` r
 head(df_chocolate,3)
@@ -505,8 +505,8 @@ head(df_nobel,3)
     ## 2                  Germany     89
     ## 3           United Kingdom     88
 
-Chocolate consmption and Nobel
-------------------------------
+Chocolate consumption and Nobel
+-------------------------------
 
 ``` r
 df <- inner_join(df_chocolate, df_nobel, by=c("Country"="Country"))
@@ -529,8 +529,8 @@ dim(df)
 
     ## [1] 27  3
 
-Chocolate consmption and Nobel
-------------------------------
+Chocolate consumption and Nobel
+-------------------------------
 
 ``` r
 df <- full_join(df_chocolate, df_nobel, by=c("Country"="Country"))
@@ -553,8 +553,8 @@ dim(df)
 
     ## [1] 142   3
 
-Chocolate consmption and Nobel
-------------------------------
+Chocolate consumption and Nobel
+-------------------------------
 
 ``` r
 df <- left_join(df_chocolate, df_nobel, by=c("Country"="Country"))
@@ -577,8 +577,8 @@ dim(df)
 
     ## [1] 90  3
 
-Chocolate consmption and Nobel
-------------------------------
+Chocolate consumption and Nobel
+-------------------------------
 
 ``` r
 df_chocolate$Country[1:50]
@@ -610,8 +610,8 @@ df_chocolate$Country[1:50]
     ## [47] "Lithuania"              "Macedonia, FYR"        
     ## [49] "Madagascar"             "Malawi"
 
-Chocolate consmption and Nobel
-------------------------------
+Chocolate consumption and Nobel
+-------------------------------
 
 ``` r
 df_nobel$Country[1:50]
@@ -725,10 +725,10 @@ Performing an `anti_join` on the two datasets
     ## # A tibble: 4 x 3
     ##   month     D Temperature
     ##   <chr> <dbl>       <dbl>
-    ## 1   Feb    18        31.5
+    ## 1   Apr     5        34.5
     ## 2   Nov    13        51.0
-    ## 3   Feb    19        31.5
-    ## 4   May    26        79.5
+    ## 3   Sep     6        75.5
+    ## 4   Jan     6        33.0
 
     ## [1] 9 3
 

@@ -593,7 +593,7 @@ In Lesson 4, we'll learn how to generate plots using `ggplot`
 The `group_by` function
 -----------------------
 
-Note that on it's own, `group_by` does not produce an output that is any different from the input:
+Note that on its own, `group_by` does not produce an output that is any different from the input:
 
 ``` r
 group_by(df_cars, cyl)
@@ -639,7 +639,7 @@ filter(df_cars3, wt_rank==1)
 Undoing the grouping
 --------------------
 
-Sometimes we may want to `ungroup` the data frame to perform a different `group_by` opertaion on the same data:
+Sometimes we may want to `ungroup` the data frame to perform a different `group_by` operation on the same data:
 
 ``` r
 df_cars2 <- group_by(df_cars, cyl)
@@ -668,7 +668,7 @@ summarize(df_cars4, mean(mpg))
 Now is your turn to practice!
 -----------------------------
 
-Let's do some manipulations on the titanic dataset. Generate a table that shows the survival rate (i.e. propability) split by class and gender.
+Let's do some manipulations on the titanic dataset. Generate a table that shows the survival rate (i.e. probability) split by class and gender.
 
 Titanic survival rates
 ----------------------
@@ -714,7 +714,7 @@ Now is your turn to practice!
 
 Let's do some more manipulations on the titanic dataset
 
-Generate a table that shows the survival rate (i.e. propability) of male passengers split by age in decades (e.g. a passenger who is 43 years old would be assigned to the 40s age group).
+Generate a table that shows the survival rate (i.e. probability) of male passengers split by age in decades (e.g. a passenger who is 43 years old would be assigned to the 40s age group).
 
 Titanic survival rates
 ----------------------
