@@ -50,8 +50,8 @@ Component | Share
 --- | ---   
  DataCamp assignments	| 20% 
  In-class short quizzes |	20%
- Assignments | 	30%  
- Capstone project |	30%
+ Assignments | 	40%  
+ Capstone project |	20%
 
 ## Getting started
 
