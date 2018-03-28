@@ -20,4 +20,4 @@ The criteria for getting a full grade on the assignment is different for each as
 
 - Easy to follow: code includes comments, indentation is used to structure the code for ease of readability, etc.
 
-- Your own work: Collaboration with classmates is not allowed. However, you can search through web resources such as overstack and copy, paste, and adapt pieces of code that might be useful to you.
+- Your own work: collaboration with classmates is not allowed. However, you can search through web resources such as overstack and copy, paste, and adapt pieces of code that might be useful to you.
