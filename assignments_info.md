@@ -12,7 +12,7 @@ The following table contains a brief description of the assignments and the due 
 2 | Scraping news articles from the website of a local magazine | TBD
 3 | Visualizing data of world healthcare outcomes | TBD
 4 | TBD | TBD
-5 | Building a classification model to predict body posture from a wearable device data | TBD
+5 | Building a classification model to predict body posture from wearable device data | TBD
 
 The criteria for getting a full grade on the assignment is different for each assignment. However, one criterion in common is to hand in a working solution that is:
 
