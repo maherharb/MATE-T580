@@ -6,13 +6,21 @@ The details of the assignments will be released in the assignments folder sequen
 
 The following table contains a brief description of the assignments and the due dates:
 
-  Assignments | Description | Due date
+  Assignment | Description | Due date
 --------------|-------------|---------
 1 | Comparing healthcare outcomes in developed countries | TBD
 2 | Scraping news articles from the website of a local magazine | TBD
-3 | TBD | TBD
+3 | Visualizing data on world healthcare outcomes | TBD
 4 | TBD | TBD
-5 | Builing a classification model to predict body posture based on data collcted from a wearable device | TBD
+5 | Building a classification model to predict body posture based on data collected from a wearable device | TBD
+
+The criteria for getting a full grade on the asisgnment is different for each assignment. However, one criterion in common is to hand in a working solution that is:
+
+- Easy to run on my machine: requires changing no more that a single line of code - the working directory path.
+
+- Easy to follow: code includes comments, indentation is used to structure the code for ease or readibility, etc.
+
+- Your own work: Collaboration with classmates is not allowed. However, you are allowed to serach through web resources such as overstack and copy paste and adapt pieces of code that migt be useful to you.
 
 
 
