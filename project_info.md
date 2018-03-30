@@ -25,14 +25,14 @@ The above is a preliminary list. Students are welcome to propose a topic not inc
 
 - Week 4: Discuss idea with instructor and get approval to proceed.
 
-- week 5: progress meeting with instructor.
+- week 5: Progress meeting with instructor.
 
-- week 6: progress meeting with instructor.
+- week 6: Progress meeting with instructor.
 
-- week 7: progress meeting with instructor.
+- week 7: Progress meeting with instructor.
 
-- week 8: draft product ready (R script, Rmd report, shiny website, etc.).
+- week 8: Draft product ready (R script, Rmd report, shiny website, etc.).
 
-- week 9: presentation ready.
+- week 9: Presentation ready.
 
-- week 10: present your work to the class.
+- week 10: Present your work to the class.
