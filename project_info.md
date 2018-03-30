@@ -6,7 +6,9 @@ The following is a list of topics that would be appropriate for the capstone pro
 Number | Desription | Assigned to
 -------|------------| -----------
 1 | Creating a report using R Markdown | 
-2 | Applying Support vector machine (SVM) algorithm to a machine learning problem |
+2 | Applying the Support Vector Machine (SVM) algorithm to a machine learning problem |
 3 | Making a map visualization with `ggplot` |
+4 | Creating an interactive visualization with shiny | 
+5 | Performing deep learning with `keras` |
 
 
