@@ -3,7 +3,7 @@
 
 ## Topics
 
-The following is a list of topics that would be appropriate for the capstone project:
+Here is a list of topics that would be appropriate for the capstone project:
 
 Number | Description | Assigned to
 -------|------------| -----------
@@ -17,3 +17,22 @@ Number | Description | Assigned to
 
 The above is a preliminary list. Students are welcome to propose a topic not included in the list above.
 
+## Timeline
+
+- Week 2: Find a team member to work with.
+
+- Week 3: Identify a motivating dataset to work with.
+
+- Week 4: Discuss idea with instructor and get approval to proceed.
+
+- week 5: progress meeting with instructor.
+
+- week 6: progress meeting with instructor.
+
+- week 7: progress meeting with instructor.
+
+- week 8: draft product ready (R script, Rmd report, shiny website, etc.).
+
+- week 9: presentation ready.
+
+- week 10: present your work to the class.
