@@ -14,6 +14,8 @@ Number | Description | Assigned to
 5 | Performing deep learning with `keras` |
 6 | Applying principal component analysis to reduce dimensionality of a wide dataset |
 7 | Demonstrating how to deal with Big data in R |
+8 | Performing network analysis and visualizing a network |
+9 | Performing machine learning on videos, images, or audio files |
 
 The above is a preliminary list. Students are welcome to propose a topic not included in the list above.
 
