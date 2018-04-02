@@ -8,7 +8,7 @@ The following table contains a brief description of the assignments and the due 
 
   Assignment | Description | Due date
 --------------|-------------|---------
-1 | Comparing healthcare outcomes in developed countries | TBD
+[1](Assignments/MATE-T580_Assignment1.pdf) | Comparing healthcare outcomes in developed countries | April 16, 2018 11:59 PM
 2 | Scraping news articles from the website of a local magazine | TBD
 3 | Visualizing data of world healthcare outcomes | TBD
 4 | TBD | TBD
