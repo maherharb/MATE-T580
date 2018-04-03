@@ -76,6 +76,8 @@ swirl()
 
 - [R for Data Science](http://r4ds.had.co.nz/) by Grolemund and Wickham
 
+- [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/) by James, Witten, Hastie, and Tibshirani
+
 
 ## About the Instructor
 
