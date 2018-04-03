@@ -72,6 +72,11 @@ library(swirl)
 swirl()
 ```
 
+## Resources
+
+- [R for Data Science](http://r4ds.had.co.nz/) by Grolemund and Wickham
+
+
 ## About the Instructor
 
 I'm an [Assistant Professor of Physics](http://drexel.edu/materials/contact/faculty/harb/) at Drexel University. I have interest in Data Science, Machine Learning, and Text Mining, and prior consulting experience in these fields. I am also an avid competitor on Kaggle with the rank of Competitions Master. 
