@@ -1,8 +1,13 @@
-Practical Data Science using R</BR>Lesson 2: Data Cleaning
+Practical Data Science using R </br> Lesson 2: Data Cleaning
 ================
-Maher Harb, PhD</BR>
-Assistant Professor of Physics</BR>Drexel University
+Maher Harb, PhD </br> Assistant Professor of Physics </br> Drexel University
 
+<style>
+.codefont pre {
+    font-size: 18px;
+    line-height: 18px;
+}
+</style>
 About the lesson
 ----------------
 
@@ -19,7 +24,7 @@ About the lesson
 Tidy data
 ---------
 
-Tidy data is a standard way of mapping the meaning of a dataset to its structure. In tidy data
+Tidy data is a standard way of mapping the meaning of a dataset to its structure. In **tidy data**:
 
 -   Each variable forms a column
 
@@ -39,7 +44,6 @@ The following is the top 200 billboard chart from 1968:
 ``` r
 library(readr)
 library(dplyr)
-setwd('C:/Users/maher/Google Drive/GitHub/MATE-T580/Datasets/')
 df_billboard <- read_csv("billboard_top200_1968_wide.csv")
 names(df_billboard)
 ```
@@ -120,10 +124,10 @@ glimpse(df_billboard)
 Billboard top 200
 -----------------
 
-Let's look as few observations:
+Let's look at few observations:
 
 ``` r
-df_billboard[1:10, c("Album", "week01", "week02", "week03", "week04")]
+df_billboard[1:10, c(1, 3:6)]
 ```
 
     ## # A tibble: 10 x 5
@@ -147,6 +151,8 @@ Such format is referred to as **wide format**
 Billboard top 200
 -----------------
 
+Chunk of the Billboard data:
+
     ## # A tibble: 5 x 5
     ##                                   Album week01 week02 week03 week04
     ##                                   <chr>  <int>  <int>  <int>  <int>
@@ -158,7 +164,7 @@ Billboard top 200
 
 Billboard data is stored in a wide format because it is a convenient form, from the perspective of data entry
 
-To tidy up the data, we need to map the information on the ranking of songs for each week into two new variables: `week` and `rank`
+To tidy up the data, we need to map the rankings of songs into two new variables: `week` and `rank`
 
 There's just the right function for that in `tidyr` package: `gather`
 
@@ -169,9 +175,8 @@ The `gather` function
 
 ``` r
 library(tidyr)
-df_billboard2 <-  df_billboard %>% 
-  gather(week, rank, week01:week52) 
-head(df_billboard2,2)
+df_billboard2 <- df_billboard %>% gather(week, rank, week01:week52)
+head(df_billboard2, 2)
 ```
 
     ## # A tibble: 2 x 4
@@ -192,29 +197,31 @@ The `gather` function
 It makes more sense to have information on the week as a numeric variable:
 
 ``` r
-library(tidyr)
-df_billboard2 <- df_billboard %>% 
-  gather(week, rank, week01:week52) %>% 
-  mutate(week = extract_numeric(week)) %>%
-  arrange(week, rank)
-head(df_billboard2,6)
+df_billboard2 <- df_billboard %>% gather(week, 
+    rank, week01:week52) %>% mutate(week = extract_numeric(week)) %>% 
+    arrange(week, rank)
+head(df_billboard2, 10)
 ```
 
-    ## # A tibble: 6 x 4
-    ##                                         Album                    Artist
-    ##                                         <chr>                     <chr>
-    ## 1           Magical Mystery Tour (Soundtrack)               The Beatles
-    ## 2             Their Satanic Majesties Request        The Rolling Stones
-    ## 3 Pisces, Aquarius, Capricorn, And Jones Ltd.               The Monkees
-    ## 4   Diana Ross And The Supremes Greatest Hits Diana Ross & The Supremes
-    ## 5       Sgt. Pepper's Lonely Hearts Club Band               The Beatles
-    ## 6                              Doctor Zhivago                Soundtrack
+    ## # A tibble: 10 x 4
+    ##                                          Album                    Artist
+    ##                                          <chr>                     <chr>
+    ##  1           Magical Mystery Tour (Soundtrack)               The Beatles
+    ##  2             Their Satanic Majesties Request        The Rolling Stones
+    ##  3 Pisces, Aquarius, Capricorn, And Jones Ltd.               The Monkees
+    ##  4   Diana Ross And The Supremes Greatest Hits Diana Ross & The Supremes
+    ##  5       Sgt. Pepper's Lonely Hearts Club Band               The Beatles
+    ##  6                              Doctor Zhivago                Soundtrack
+    ##  7                          The Sound Of Music                Soundtrack
+    ##  8            Farewell To The First Golden Era     The Mamas & The Papas
+    ##  9                                Strange Days                 The Doors
+    ## 10                                  Love, Andy             Andy Williams
     ## # ... with 2 more variables: week <dbl>, rank <int>
 
 Flash-forward
 -------------
 
-In Lesson 3, we'll learn how to extract data from webpages
+In Lesson 3, we'll learn how to scrape data from a webpage
 
 ``` r
 chart_long <- data_frame(Album = character(), Artist = character(), 
@@ -239,23 +246,32 @@ for (w in 1:52) {
 Flash-forward
 -------------
 
-In Lesson 4, we'll learn how to generate plots using `ggplot`
+In Lesson 4, we'll learn how to generate plots with `ggplot`
 
-![](Lesson_02_Data_Cleaning_github_files/figure-markdown_github/unnamed-chunk-8-1.png)
+![](Lesson_02_Data_Cleaning_files/figure-markdown_github/unnamed-chunk-8-1.png)
 
 Now is your turn to practice!
 -----------------------------
 
 The NYC weather dataset contains average daily temperatures recorded in NYC (central park) in 2016. The dataset is located at:
 
-`https://raw.githubusercontent.com/mharb75/MATE-T580/master/Datasets/nyc_weather_wide.csv`
+`https://raw.githubusercontent.com/maherharb/MATE-T580/master/Datasets/nyc_weather_wide.csv`
 
 Your task is to download the dataset, inspect it, and perform the necessary operations to transform the dataset into the tidy format.
 
 NYC daily temperature in 2016
 -----------------------------
 
+``` r
+nyc_wide <- read_csv("nyc_weather_wide.csv")
+dim(nyc_wide)
+```
+
     ## [1] 12 32
+
+``` r
+head(nyc_wide)
+```
 
     ## # A tibble: 6 x 32
     ##   month  day1  day2  day3  day4  day5  day6  day7  day8  day9 day10 day11
@@ -275,6 +291,14 @@ NYC daily temperature in 2016
 NYC daily temperature in 2016
 -----------------------------
 
+``` r
+nyc_long <- nyc_wide %>% gather(day, Temperature, 
+    day1:day31, na.rm = TRUE) %>% mutate(day = extract_numeric(day)) %>% 
+    mutate(Date = as.Date(paste0("2016-", 
+        month, "-", day), "%Y-%b-%d"))
+head(nyc_long, 5)
+```
+
     ## # A tibble: 5 x 4
     ##   month   day Temperature       Date
     ##   <chr> <dbl>       <dbl>     <date>
@@ -283,6 +307,10 @@ NYC daily temperature in 2016
     ## 3   Mar     1        45.5 2016-03-01
     ## 4   Apr     1        70.0 2016-04-01
     ## 5   May     1        48.0 2016-05-01
+
+``` r
+dim(nyc_long)
+```
 
     ## [1] 366   4
 
@@ -302,7 +330,7 @@ Missing values
 Missing values
 --------------
 
-use `is.na` to find missing values
+use `is.na` to find missing values:
 
 ``` r
 sum(is.na(df_billboard))
@@ -310,7 +338,7 @@ sum(is.na(df_billboard))
 
     ## [1] 24856
 
-You may omit missing values using `na.omit`
+You may omit missing values using `na.omit`:
 
 ``` r
 dim(df_billboard)
@@ -355,7 +383,7 @@ df_billboard %>% na.omit() %>% select(Album, Artist)
 Missing values
 --------------
 
-using `na.omit` on the long version of the billboard dataset is acceptable, as each observation represents the ranking of a track during a specific week only
+using `na.omit` on the long version of the billboard dataset is acceptable, as each observation represents the ranking of an album during a specific week only
 
 ``` r
 dim(df_billboard2)
@@ -369,6 +397,8 @@ dim(na.omit(df_billboard2))
 
     ## [1] 10400     4
 
+The number of rows also makes sense: 10400 = 52 × 200
+
 Missing values
 --------------
 
@@ -381,6 +411,65 @@ Strategies for dealing with missing values depend on the nature of the data and 
 -   Replacing missing values with values derived from similar observations
 -   Keeping missing values and treating them as a level of a categorical variable
 
+Now is your turn to practice!
+-----------------------------
+
+The following link points to the titanic dataset (a csv file):
+
+`https://raw.githubusercontent.com/maherharb/MATE-T580/master/Datasets/titanic_train.csv`
+
+The titanic dataset contains information on passengers of the titanic and whether they survived the disaster.
+
+Load the csv file as an R data frame. Investigate whether the dataset contains missing values. If yes, pick a variable of your choice among the ones that contain missing values and attempt to fill the missing values with reasonable numbers/terms.
+
+Missing values in the Titanic dataset
+-------------------------------------
+
+Here's how we can find which variables contain missing values:
+
+``` r
+df_titanic <- read_csv("titanic_train.csv")
+sapply(df_titanic, function(x) {
+    sum(is.na(x))
+})
+```
+
+    ## PassengerId    Survived      Pclass        Name         Sex         Age 
+    ##           0           0           0           0           0         149 
+    ##       SibSp       Parch      Ticket        Fare       Cabin    Embarked 
+    ##           0           0           0           0         549           2
+
+The only two variables that have missing values are Age and Cabin
+
+Let's find out more information about these...
+
+Missing values in the Titanic dataset
+-------------------------------------
+
+What is the median age of passengers?
+
+``` r
+median(df_titanic$Age, na.rm = TRUE)
+```
+
+    ## [1] 28
+
+Let's impute the missing age by the median:
+
+``` r
+df_titanic$Age[is.na(df_titanic$Age)] <- median(df_titanic$Age, na.rm = TRUE)
+```
+
+Let's check few values for the cabin:
+
+``` r
+head(df_titanic$Cabin, 10)
+```
+
+    ##  [1] NA    NA    NA    NA    NA    NA    NA    NA    "D20" NA
+
+We can either keep it `NA` or assign `"N/A"`
+
 The `spread` function
 ---------------------
 
@@ -389,9 +478,8 @@ There could be a need to perform the opposite transformation: i.e. from the **lo
 This is done with the `spread` function
 
 ``` r
-df_billboard3 <- df_billboard2 %>%
-  rename(w=week) %>%
-  spread(w, rank, sep="")
+df_billboard3 <- df_billboard2 %>% rename(w = week) %>% 
+    spread(w, rank, sep = "")
 names(df_billboard3)
 ```
 
@@ -410,18 +498,19 @@ One hot encoding
 One important use of `spread` is to convert a categorical variable into multiple binary variables:
 
 ``` r
-Aliens <- data_frame(Name=c("Eon", "Zen", "Nya"),
-                      Height = c(123, 134, 128),
-                     Eye = c("Purple", "Red", "Orange"))
+Aliens <- data_frame(Name = c("Eon", "Zen", "Nya", 
+    "Mar"), Height = c(123, 134, 128, 127), Eye = c("Purple", 
+    "Red", "Orange", "Orange"))
 Aliens
 ```
 
-    ## # A tibble: 3 x 3
+    ## # A tibble: 4 x 3
     ##    Name Height    Eye
     ##   <chr>  <dbl>  <chr>
     ## 1   Eon    123 Purple
     ## 2   Zen    134    Red
     ## 3   Nya    128 Orange
+    ## 4   Mar    127 Orange
 
 Even though the data is tidy, many machine learning algorithms are not able to deal with non-numeric variables
 
@@ -431,15 +520,16 @@ One hot encoding
 Hence we do the following transformation:
 
 ``` r
-Aliens %>% mutate(dummy=1) %>% spread(Eye, dummy, fill=0)
+Aliens %>% mutate(dummy = 1) %>% spread(Eye, dummy, fill = 0)
 ```
 
-    ## # A tibble: 3 x 5
+    ## # A tibble: 4 x 5
     ##    Name Height Orange Purple   Red
     ## * <chr>  <dbl>  <dbl>  <dbl> <dbl>
     ## 1   Eon    123      0      1     0
-    ## 2   Nya    128      1      0     0
-    ## 3   Zen    134      0      0     1
+    ## 2   Mar    127      1      0     0
+    ## 3   Nya    128      1      0     0
+    ## 4   Zen    134      0      0     1
 
 This operation is called **one hot encoding**
 
@@ -456,15 +546,14 @@ Joining datasets
 
 -   Hence, we might find that the data of interest is split among two or more tables
 
--   the `dplyr` family of `join` functions makes it easy to join data from different datasets
+-   the `dplyr` family of `join` functions makes it easy to join data from different tables
 
-Chocolate consumption and Nobel
--------------------------------
+Nobel wins vs. Chocolate consumption
+------------------------------------
 
-Say we're interested in exploring the relationship between chocolate consumption and nobel prizes on a country level. The data of interest resides in two separate datasets
+Say we're interested in exploring the relationship between per capita Nobel wins and per capita chocolate consumption on a country level. The data of interest resides in two separate datasets:
 
 ``` r
-setwd('C:/Users/maher/Google Drive/GitHub/MATE-T580/Datasets/')
 df_chocolate <- read_csv("chocolate.csv")
 df_nobel <- read_csv("nobel_prizes.csv")
 dim(df_chocolate)
@@ -480,11 +569,11 @@ dim(df_nobel)
 
 Let's take a look at the data...
 
-Chocolate consumption and Nobel
--------------------------------
+Nobel wins vs. Chocolate consumption
+------------------------------------
 
 ``` r
-head(df_chocolate,3)
+head(df_chocolate, 3)
 ```
 
     ## # A tibble: 3 x 2
@@ -495,7 +584,7 @@ head(df_chocolate,3)
     ## 3     Armenia                    47.51346
 
 ``` r
-head(df_nobel,3)
+head(df_nobel, 3)
 ```
 
     ## # A tibble: 3 x 2
@@ -505,11 +594,13 @@ head(df_nobel,3)
     ## 2                  Germany     89
     ## 3           United Kingdom     88
 
-Chocolate consumption and Nobel
--------------------------------
+Nobel wins vs. Chocolate consumption
+------------------------------------
+
+The two datasets are joined by `inner_join`:
 
 ``` r
-df <- inner_join(df_chocolate, df_nobel, by=c("Country"="Country"))
+df <- inner_join(df_chocolate, df_nobel, by = c(Country = "Country"))
 head(df)
 ```
 
@@ -529,11 +620,13 @@ dim(df)
 
     ## [1] 27  3
 
-Chocolate consumption and Nobel
--------------------------------
+Nobel wins vs. Chocolate consumption
+------------------------------------
+
+Or by `full_join`:
 
 ``` r
-df <- full_join(df_chocolate, df_nobel, by=c("Country"="Country"))
+df <- full_join(df_chocolate, df_nobel, by = c(Country = "Country"))
 head(df)
 ```
 
@@ -553,11 +646,13 @@ dim(df)
 
     ## [1] 142   3
 
-Chocolate consumption and Nobel
--------------------------------
+Nobel wins vs. Chocolate consumption
+------------------------------------
+
+Or by `left_join`:
 
 ``` r
-df <- left_join(df_chocolate, df_nobel, by=c("Country"="Country"))
+df <- left_join(df_chocolate, df_nobel, by = c(Country = "Country"))
 head(df)
 ```
 
@@ -577,11 +672,13 @@ dim(df)
 
     ## [1] 90  3
 
-Chocolate consumption and Nobel
--------------------------------
+Nobel wins vs. Chocolate consumption
+------------------------------------
+
+Further investigation is useful:
 
 ``` r
-df_chocolate$Country[1:50]
+df_chocolate$Country[1:40]
 ```
 
     ##  [1] "Afghanistan"            "Albania"               
@@ -603,18 +700,15 @@ df_chocolate$Country[1:50]
     ## [33] "Guinea"                 "Honduras"              
     ## [35] "India"                  "Indonesia"             
     ## [37] "Iraq"                   "Jamaica"               
-    ## [39] "Jordan"                 "Kazakhstan"            
-    ## [41] "Kenya"                  "Kyrgyz Republic"       
-    ## [43] "Lao PDR"                "Latvia"                
-    ## [45] "Lesotho"                "Liberia"               
-    ## [47] "Lithuania"              "Macedonia, FYR"        
-    ## [49] "Madagascar"             "Malawi"
+    ## [39] "Jordan"                 "Kazakhstan"
 
-Chocolate consumption and Nobel
--------------------------------
+Nobel wins vs. Chocolate consumption
+------------------------------------
+
+Further investigation is useful:
 
 ``` r
-df_nobel$Country[1:50]
+df_nobel$Country[1:40]
 ```
 
     ##  [1] "United States of America" "Germany"                 
@@ -636,12 +730,7 @@ df_nobel$Country[1:50]
     ## [33] "Belarus"                  "Pakistan"                
     ## [35] "Algeria"                  "Lithuania"               
     ## [37] "Mexico"                   "New Zealand"             
-    ## [39] "Portugal"                 "Turkey"                  
-    ## [41] "Bosnia and Herzegovina"   "Chile"                   
-    ## [43] "Colombia"                 "East Timor"              
-    ## [45] "Guatemala"                "Iran"                    
-    ## [47] "Liberia"                  "Luxembourg"              
-    ## [49] "Morocco"                  "Saint Lucia"
+    ## [39] "Portugal"                 "Turkey"
 
 Flash-forward
 -------------
@@ -655,42 +744,69 @@ Now is your turn to practice!
 
 There is another NYC weather dataset that contains daily records of precipitation and snowfall in 2016. The dataset is located at:
 
-`https://raw.githubusercontent.com/mharb75/MATE-T580/master/Datasets/nyc_precipitation.csv`
+`https://raw.githubusercontent.com/maherharb/MATE-T580/master/Datasets/nyc_precipitation.csv`
 
 Use the tools you learned in this lesson to produce a single data frame which contains data on daily temperature, precipitation, and snowfall
 
 NYC precipitation data
 ----------------------
 
-    ## # A tibble: 5 x 4
+Let's first retrieve the precipitation dataset:
+
+``` r
+nyc_prec <- read_csv("nyc_precipitation.csv")
+head(nyc_prec, 4)
+```
+
+    ## # A tibble: 4 x 4
     ##   month   day precipitation snow_fall
     ##   <chr> <int>         <chr>     <chr>
     ## 1   Jan     1             0         0
     ## 2   Jan     2             0         0
     ## 3   Jan     3             0         0
     ## 4   Jan     4             0         0
-    ## 5   Jan     5             0         0
+
+``` r
+dim(nyc_prec)
+```
 
     ## [1] 357   4
 
 NYC precipitation data
 ----------------------
 
-    ## # A tibble: 5 x 3
+Next, we retrieve the temperature dataset and reshape it:
+
+``` r
+nyc_long <- nyc_wide %>% gather(D, Temperature, day1:day31, na.rm = TRUE) %>% 
+    mutate(D = extract_numeric(D))
+head(nyc_long, 4)
+```
+
+    ## # A tibble: 4 x 3
     ##   month     D Temperature
     ##   <chr> <dbl>       <dbl>
     ## 1   Jan     1        38.0
     ## 2   Feb     1        51.5
     ## 3   Mar     1        45.5
     ## 4   Apr     1        70.0
-    ## 5   May     1        48.0
+
+``` r
+dim(nyc_long)
+```
 
     ## [1] 366   3
 
 NYC precipitation data
 ----------------------
 
-Performing a `full_join` on the two datasets
+Performing a `full_join` on the two datasets:
+
+``` r
+nyc_weather <- full_join(nyc_long, nyc_prec, 
+    by = c(month = "month", D = "day"))
+head(nyc_weather, 4)
+```
 
     ## # A tibble: 4 x 5
     ##   month     D Temperature precipitation snow_fall
@@ -699,13 +815,23 @@ Performing a `full_join` on the two datasets
     ## 2   Feb     1        51.5          0.01         0
     ## 3   Mar     1        45.5             0         0
     ## 4   Apr     1        70.0          0.02         0
+
+``` r
+dim(nyc_weather)
+```
 
     ## [1] 366   5
 
 NYC precipitation data
 ----------------------
 
-Performing an `inner_join` on the two datasets
+Performing an `inner_join` on the two datasets:
+
+``` r
+nyc_weather <- inner_join(nyc_long, nyc_prec, 
+    by = c(month = "month", D = "day"))
+head(nyc_weather, 4)
+```
 
     ## # A tibble: 4 x 5
     ##   month     D Temperature precipitation snow_fall
@@ -715,27 +841,50 @@ Performing an `inner_join` on the two datasets
     ## 3   Mar     1        45.5             0         0
     ## 4   Apr     1        70.0          0.02         0
 
+``` r
+dim(nyc_weather)
+```
+
     ## [1] 357   5
 
 NYC precipitation data
 ----------------------
 
-Performing an `anti_join` on the two datasets
+Performing an `anti_join` on the two datasets:
+
+``` r
+nyc_weather <- anti_join(nyc_long, nyc_prec, 
+    by = c(month = "month", D = "day"))
+head(nyc_weather, 4)
+```
 
     ## # A tibble: 4 x 3
     ##   month     D Temperature
     ##   <chr> <dbl>       <dbl>
-    ## 1   May    27        80.0
-    ## 2   Sep     6        75.5
+    ## 1   Sep     6        75.5
+    ## 2   Apr     5        34.5
     ## 3   Nov    12        43.5
-    ## 4   Nov    13        51.0
+    ## 4   Feb    18        31.5
+
+``` r
+dim(nyc_weather)
+```
 
     ## [1] 9 3
 
 NYC precipitation data
 ----------------------
 
-Performing a `left_join` on the two datasets
+Performing a `left_join` on the two datasets:
+
+``` r
+nyc_weather <- full_join(nyc_long, nyc_prec, 
+    by = c(month = "month", D = "day")) %>% 
+    rename(day = D) %>% mutate(precipitation = extract_numeric(precipitation), 
+    snow_fall = extract_numeric(snow_fall), 
+    month = factor(month, levels = unique(month)))
+head(nyc_weather, 4)
+```
 
     ## # A tibble: 4 x 5
     ##    month   day Temperature precipitation snow_fall
@@ -745,14 +894,18 @@ Performing a `left_join` on the two datasets
     ## 3    Mar     1        45.5          0.00         0
     ## 4    Apr     1        70.0          0.02         0
 
+``` r
+dim(nyc_weather)
+```
+
     ## [1] 366   5
 
 Flash-forward
 -------------
 
-In Lesson 4, we'll learn how to generate plots using `ggplot`
+In Lesson 4, we'll learn how to generate plots with `ggplot`
 
-![](Lesson_02_Data_Cleaning_github_files/figure-markdown_github/unnamed-chunk-31-1.png)
+![](Lesson_02_Data_Cleaning_files/figure-markdown_github/unnamed-chunk-35-1.png)
 
 Concluding remarks
 ------------------
@@ -766,4 +919,4 @@ With `dplyr` and `tidyr`, you should be able to do all sorts of data frame manip
 -   Join data frames with `full_join`, `inner_join`, `left_join`, `anti_join`
 -   Write more efficient code with the `%>%` operator
 
-Mastery of the above, is a prerequisite to doing any serious data science
+Mastery of the above, is a prerequisite to doing any serious work in data science using R
