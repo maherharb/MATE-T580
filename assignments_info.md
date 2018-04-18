@@ -2,7 +2,7 @@
 
 There will be assignments that are due every other week. That is a total of five assignments over the duration of the course. These assignments are more like challenges. They are intended to get you to apply the techniques you learn in class and on DataCamp to relevant problems that use real datasets. 
 
-The details of the assignments will be released in the assignments folder sequentially (as pdf files). Each file will thoroughly describe the task at hand and how to access the required dataset(s) (if any). Hand in the solution by emailing the script(s) to the instructor by the due date. The name of the file should be **Assignmentx_last_first.R**, where *x* is the assignmnet number and *last* and *first* are the student's last and first name. The .Rmd (journal) format is also accepted. 
+The details of the assignments will be released in the assignments folder sequentially (as pdf files). Each file will thoroughly describe the task at hand and how to access the required dataset(s) (if any). Hand in the solution by emailing the script(s) to the instructor by the due date. The name of the file should be **Assignmentx_last_first.R**, where *x* is the assignment number and *last* and *first* are the student's last and first name. The .Rmd (journal) format is also accepted. 
 
 The following table contains a brief description of the assignments and the due dates:
 
