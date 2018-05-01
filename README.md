@@ -78,6 +78,7 @@ swirl()
 
 - [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/) by James, Witten, Hastie, and Tibshirani
 
+- [Text Mining with R](https://www.tidytextmining.com/) by Julia Silge and David Robinson
 
 ## About the Instructor
 
