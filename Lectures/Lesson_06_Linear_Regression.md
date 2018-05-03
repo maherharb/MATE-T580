@@ -2,12 +2,6 @@ Practical Data Science using R </br> Lesson 6: The Linear Regression
 ================
 Maher Harb, PhD </br> Assistant Professor of Physics </br> Drexel University
 
-<style>
-.codefont pre {
-    font-size: 18px;
-    line-height: 18px;
-}
-</style>
 About the lesson
 ----------------
 
