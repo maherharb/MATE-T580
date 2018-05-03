@@ -76,8 +76,9 @@ swirl()
 
 - [R for Data Science](http://r4ds.had.co.nz/) by Grolemund and Wickham
 
-- [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/) by James, Witten, Hastie, and Tibshirani
+- [An Introduction to Statistical Learning with Applications in R](http://www-bcf.usc.edu/~gareth/ISL/) by James, Witten, Hastie, and Tibshirani
 
+- [Text Mining with R](https://www.tidytextmining.com/) by Julia Silge and David Robinson
 
 ## About the Instructor
 
