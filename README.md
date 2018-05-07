@@ -90,5 +90,5 @@ The lessons of this course are for the most part original material that I develo
 
 The datasets used in the various demos and assignments were collected from different sources on the Internet and placed in a single folder for convenience to students. The datasets and scripts are used for sole educational purposes. 
 
-Educators interested in obtaining the .Rmd files used to created the lessons should contact me with their request. 
+Educators interested in obtaining the .Rmd files used to create the lessons should contact me with their request. 
 
