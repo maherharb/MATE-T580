@@ -44,8 +44,9 @@ The above is a preliminary list. Students are welcome to propose a topic not inc
 - 24 hours before the date of the presentation, the .ppt file, .R scripts, and datasets used shall be made available to the course Instructor via a shared folder.
 
 ## Grading rubric
+- Delivering the files in final form by the due date (10%)
 - How well you explain the main theoretical concept(s) (25%)
 - How well you explain the steps involved in the analysis/modeling (25%)
-- Soundness of your approach to the problem (e.g. did you miss some obvious steps) (25%) 
-- Performance on answering judges’ questions (Individual basis) (25%) 
+- Soundness of your approach to the problem (e.g. did you miss some obvious steps) (20%) 
+- Performance on answering judges’ questions (Individual basis) (20%) 
 
