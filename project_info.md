@@ -38,3 +38,14 @@ The above is a preliminary list. Students are welcome to propose a topic not inc
 - week 9: Presentation ready.
 
 - week 10: Present your work to the class.
+
+## Deliverables
+- You will present (as a team) your project to the class in the form of a .ppt document. The presentation may also include a live demo in R if this's useful. You have a total of 12 minutes to present your work. 
+- 24 hours before the date of the presentation, the .ppt file, .R scripts, and datasets used shall be made available to the course Instructor via a shared folder.
+
+## Grading rubric
+- How well you explain the main theoretical concept(s) (25%)
+- How well you explain the steps involved in the analysis/modeling (25%)
+- Soundness of your approach to the problem (e.g. did you miss some obvious steps) (25%) 
+- Performance on answering judges’ questions (Individual basis) (25%) 
+
