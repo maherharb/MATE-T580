@@ -2,12 +2,6 @@ Practical Data Science using R </br> Lesson 6: The Linear Regression
 ================
 Maher Harb, PhD </br> Assistant Professor of Physics </br> Drexel University
 
-<style>
-.codefont pre {
-    font-size: 18px;
-    line-height: 18px;
-}
-</style>
 About the lesson
 ----------------
 
@@ -742,7 +736,7 @@ The credit dataset contains demographic data and credit ratings for a number of 
 
 The dataset can be downloaded from:
 
-`https://raw.githubusercontent.com/maherharb/MATE-T580/master/Datasets/ISLR_credit.csv`
+`https://raw.githubusercontent.com/maherharb/MATE-T580/master/Datasets/ISLR_Credit.csv`
 
 Credit Rating
 -------------
