@@ -2,6 +2,12 @@ Practical Data Science using R </br> Lesson 6: The Linear Regression
 ================
 Maher Harb, PhD </br> Assistant Professor of Physics </br> Drexel University
 
+<style>
+.codefont pre {
+    font-size: 18px;
+    line-height: 18px;
+}
+</style>
 About the lesson
 ----------------
 
@@ -224,9 +230,18 @@ Build a linear regression model to investigate whether a car's weight can be use
 Predicting car's mpg
 --------------------
 
+``` r
+mod_cars <- lm(mpg ~ wt, mtcars)
+summary(mod_cars)$coefficients
+```
+
     ##              Estimate Std. Error   t value     Pr(>|t|)
     ## (Intercept) 37.285126   1.877627 19.857575 8.241799e-19
     ## wt          -5.344472   0.559101 -9.559044 1.293959e-10
+
+``` r
+summary(mod_cars)$adj.r.squared
+```
 
     ## [1] 0.7445939
 
@@ -238,6 +253,12 @@ Predicting car's mpg
 --------------------
 
 Here's how to plot the regression line in Base R:
+
+``` r
+par(mar = c(4, 4, 0, 0))
+plot(mtcars$wt, mtcars$mpg, xlab = "Weight", ylab = "MPG")
+abline(mod_cars)
+```
 
 ![](Lesson_06_Linear_Regression_files/figure-markdown_github/unnamed-chunk-9-1.png)
 
@@ -376,10 +397,19 @@ Predicting car's mpg
 
 Let's see if including the transmission type improves the model:
 
+``` r
+mod_cars <- lm(mpg ~ wt + factor(am), mtcars)
+summary(mod_cars)$coefficients
+```
+
     ##                Estimate Std. Error     t value     Pr(>|t|)
     ## (Intercept) 37.32155131  3.0546385 12.21799285 5.843477e-13
     ## wt          -5.35281145  0.7882438 -6.79080719 1.867415e-07
     ## factor(am)1 -0.02361522  1.5456453 -0.01527855 9.879146e-01
+
+``` r
+summary(mod_cars)$adj.r.squared
+```
 
     ## [1] 0.7357889
 
@@ -483,6 +513,11 @@ Predicting car's mpg
 
 It turns out that this model produces the highest adjusted R-squared:
 
+``` r
+mod_cars <- lm(mpg ~ wt + factor(cyl), mtcars)
+summary(mod_cars)$adj.r.squared
+```
+
     ## [1] 0.8200146
 
 But the process for selecting the "right" predictors was tedious
@@ -579,6 +614,75 @@ R2 <- mod$results$Rsquared[which(grid$lambda == 0.9)]
 
     ## [1] 0.8417356
 
+Structure of the grid search code for Lasso
+-------------------------------------------
+
+1.  Some pre-processing (center and scale)
+
+2.  Defining grid for hyper-parameter search (lambda)
+
+3.  Defining keys for cross-validation
+
+4.  Choosing error metric (RMSE)
+
+5.  Choosing package for performing training (`glmnet`)
+
+6.  Loop over grid and calculate error for each trained model
+
+7.  Plot results
+
+Doing a grid search without caret
+---------------------------------
+
+``` r
+set.seed(1234)
+X <- as.matrix(mtcars[, -1])
+Y <- mtcars$mpg
+# center and scale
+X <- scale(X, center = TRUE, scale = TRUE)
+# search grid
+grid <- expand.grid(alpha = 1, lambda = seq(0, 2, length = 201))
+# cross-validation keys
+cv_key <- sample(1:5, nrow(mtcars), replace = TRUE)
+# RMSE will be saved here
+err_values <- rep(0, nrow(grid))
+for (i in 1:nrow(grid)) {
+    # Loop over grid
+    err <- rep(0, 5)
+    for (k in 1:5) {
+        # Loop over keys
+        x.trn <- X[!cv_key == k, ]
+        x.tst <- X[cv_key == k, ]
+        y.trn <- Y[!cv_key == k]
+        y.tst <- Y[cv_key == k]
+        mod <- glmnet(x = x.trn, y = y.trn, alpha = grid$alpha[i], 
+            lambda = grid$lambda[i])
+        yhat.tst <- predict(mod, x.tst)
+        err[k] <- sqrt(sum(yhat.tst - y.tst)^2)
+    }
+    err_values[i] <- mean(err)
+}
+plot(grid$lambda, err_values)
+```
+
+Doing a grid search without caret
+---------------------------------
+
+Another approach would make use of the built in cv and search functions in `glmnet`:
+
+``` r
+set.seed(1234)
+X <- as.matrix(mtcars[, -1])
+Y <- mtcars$mpg
+# center and scale
+X <- scale(X, center = TRUE, scale = TRUE)
+# search grid
+grid <- expand.grid(alpha = 1, lambda = seq(0, 2, length = 301))
+mod <- cv.glmnet(x = X, y = Y, nfolds = 4, alpha = 1, 
+    lambda = grid$lambda)
+plot(mod)
+```
+
 Non-linear relationships
 ------------------------
 
@@ -645,7 +749,7 @@ Credit Rating
 
 Notice that Limit and Rating are ~100% correlated. Including the Limit as predictor does not make sense! But if we remove Limit and search within the proper *λ* range:
 
-![](Lesson_06_Linear_Regression_files/figure-markdown_github/unnamed-chunk-28-1.png)
+![](Lesson_06_Linear_Regression_files/figure-markdown_github/unnamed-chunk-30-1.png)
 
 *λ* = 6 seems a reasonable value for the hyper-parameter
 
