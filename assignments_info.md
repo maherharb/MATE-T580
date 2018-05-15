@@ -12,7 +12,7 @@ The following table contains a brief description of the assignments and the due 
 [2](Assignments/MATE-T580_Assignment2.pdf) | Scraping news articles from the website of a local magazine | April 30, 2018, 11:59 PM
 [3](Assignments/MATE-T580_Assignment3.pdf)  | Visualizing data of world healthcare outcomes | May 14, 2018, 11:59 PM
 4 | Predicting the number of applications received by a college   | May 28, 2018, 11:59 PM
-5 | Building a classification model to predict body posture from wearable device data | June 11, 2018, 11:59 PM
+5 | Building a classification model to predict body posture from wearable device data | June 11, 2018, 11:59 PM (to be completed in class)
 
 The criteria for getting a full grade on the assignment is different for each assignment. However, one criterion in common is to hand in a working solution that is:
 
