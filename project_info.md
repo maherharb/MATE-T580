@@ -19,7 +19,7 @@ The above is a preliminary list. Students are welcome to propose a topic not inc
 
 Here is a list of the confirmed project topics:
 
-Number | Description | Assigned to
+Group</BR>Number | Description | Assigned to
 -------|------------| -----------
 1 | Classifying retinal image scans according to retinal damage due to diabetes | DE, KDS
 2 | Detecting fake Amazon reviews | SM
