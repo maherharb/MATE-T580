@@ -23,9 +23,9 @@ Group</BR>Number | Project Description | Assigned to
 -------|------------| -----------
 1 | Classifying retinal image scans according to retinal damage due to diabetes | DE, KDS
 2 | Detecting fake Amazon reviews | SM
-3 |  |
-4 |  | 
-5 |  |
+3 | Classifying different styles of beer  | IR, XR
+4 | Using shiny to visualize data from yelp reviews | Cl, BW
+5 | Classifying hand written digits with SVM | SX, YZ
 6 |  |
 7 |  |
 8 |  |
