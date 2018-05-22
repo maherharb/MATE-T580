@@ -22,7 +22,7 @@ Here is a list of the confirmed project topics:
 Group</BR>Number | Project Description | Assigned to
 -------|------------| -----------
 1 | Classifying retinal image scans according to retinal damage due to diabetes | DE, KDS
-2 | applying cluster analysis to detect fake Amazon reviews | SM
+2 | Applying cluster analysis to detect fake Amazon reviews | SM
 3 | Classifying different styles of beer  | IR, XR
 4 | Using shiny to visualize data from yelp reviews | Cl, BW
 5 | Classifying hand written digits with SVM | SX, YZ
