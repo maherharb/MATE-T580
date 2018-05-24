@@ -29,7 +29,8 @@ Group</BR>Number | Project Description | Assigned to
 6 | Visualizing US population data | TM, SK
 7 | Building a movie recommender system| KM, YZ
 8 | Investigating the relationship between meat consumption and mortality | SC, KJ
-9 |  |
+9 | Detecting particle trajectories in a high energy physics experiment | DF, CP
+10| Classifying images using convolutional neural network | BM, XC
 
 
 ## Timeline
