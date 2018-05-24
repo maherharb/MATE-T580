@@ -5,19 +5,32 @@
 
 Here is a list of topics that would be appropriate for the capstone project:
 
-Number | Description | Assigned to
--------|------------| -----------
-1 | Creating an analysis report with R Markdown | 
-2 | Applying the Support Vector Machine (SVM) algorithm to a machine learning problem |
-3 | Making a map visualization with `ggplot` |
-4 | Creating an interactive visualization with shiny | 
-5 | Performing deep learning with `keras` |
-6 | Applying principal component analysis to reduce dimensionality of a wide dataset |
-7 | Demonstrating how to deal with Big data in R |
-8 | Performing network analysis and visualizing a network |
-9 | Performing machine learning on videos, images, or audio files |
+- Creating an analysis report with R Markdown  
+- Applying the Support Vector Machine (SVM) algorithm to a machine learning problem 
+- Making a map visualization with `ggplot` 
+- Creating an interactive visualization with shiny 
+- Performing deep learning with `keras` 
+- Applying principal component analysis to reduce dimensionality of a wide dataset 
+- Demonstrating how to deal with Big data in R 
+- Performing network analysis and visualizing a network 
+- Performing machine learning on videos, images, or audio files 
 
 The above is a preliminary list. Students are welcome to propose a topic not included in the list above.
+
+Here is a list of the confirmed project topics:
+
+Group</BR>Number | Project Description | Assigned to
+-------|------------| -----------
+1 | Classifying retinal image scans according to retinal damage due to diabetes | DE, KDS
+2 | Applying cluster analysis to detect fake Amazon reviews | SM
+3 | Classifying different styles of beer  | IR, XR
+4 | Using shiny to visualize data from yelp reviews | CL, BW
+5 | Classifying hand written digits with SVM | SX, YZ
+6 |  |
+7 |  |
+8 |  |
+9 |  |
+
 
 ## Timeline
 
@@ -44,9 +57,10 @@ The above is a preliminary list. Students are welcome to propose a topic not inc
 - 24 hours before the date of the presentation, the .ppt file, .R scripts, and datasets used shall be made available to the course Instructor via a shared folder.
 
 ## Grading rubric
+- Meeting with Instructor to discuss the progress of the project (10%)
 - Delivering the files in final form by the due date (10%)
-- How well you explain the main theoretical concept(s) (25%)
-- How well you explain the steps involved in the analysis/modeling (25%)
+- How well you explain the main theoretical concept(s) (20%)
+- How well you explain the steps involved in the analysis/modeling (20%)
 - Soundness of your approach to the problem (e.g. did you miss some obvious steps) (20%) 
 - Performance on answering judges’ questions (Individual basis) (20%) 
 
