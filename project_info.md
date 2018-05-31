@@ -26,10 +26,11 @@ Group</BR>Number | Project Description | Assigned to
 3 | Classifying different styles of beer  | IR, XR
 4 | Using shiny to visualize data from yelp reviews | CL, BW
 5 | Classifying hand written digits with SVM | SX, YZ
-6 |  |
-7 |  |
-8 |  |
-9 |  |
+6 | Visualizing US population data | TM, SK
+7 | Building a movie recommender system| KM, YZ
+8 | Investigating the relationship between meat consumption and mortality | SC, KJ
+9 | Detecting particle trajectories in a high energy physics experiment | DF, CP
+10| Classifying images using convolutional neural network | BM, XC
 
 
 ## Timeline
