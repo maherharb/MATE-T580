@@ -94,3 +94,6 @@ The datasets used in the various demos and assignments were collected from diffe
 
 Educators interested in obtaining the .Rmd files used to create the lessons should contact me with their request. 
 
+## Footnotes
+
+1. To avoid any confusion over the term "University", [here's what I believe a University is](https://www.uow.edu.au/~nillsen/The_Two_Universities.html) (based on the words of Robert M. Pirsig). 
