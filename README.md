@@ -96,4 +96,4 @@ Educators interested in obtaining the .Rmd files used to create the lessons shou
 
 ## <a name="footnotes"></a>Footnotes
 
-1. To avoid any confusion over the term "University", [here's what I believe a University is](https://www.uow.edu.au/~nillsen/The_Two_Universities.html) (based on the words of Robert M. Pirsig). 
+1. To avoid any confusion over the term "University", [here's what I believe a University is](https://www.uow.edu.au/~nillsen/The_Two_Universities.html) (the words of Robert M. Pirsig). 
