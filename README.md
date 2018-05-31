@@ -80,6 +80,8 @@ swirl()
 
 - [Text Mining with R](https://www.tidytextmining.com/) by Julia Silge and David Robinson
 
+- [Tensorflow playground](https://playground.tensorflow.org): use this simulator to experiment with building and tuning a neural network to solve some prototype problems
+
 ## About the Instructor
 
 I'm an [Assistant Professor of Physics](http://drexel.edu/materials/contact/faculty/harb/) at Drexel University. I have interest in Data Science, Machine Learning, and Text Mining, and prior consulting experience in these fields. I am also an avid competitor on Kaggle with the rank of Competitions Master. 
