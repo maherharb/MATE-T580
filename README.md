@@ -96,7 +96,7 @@ Educators interested in obtaining the .Rmd files used to create the lessons shou
 
 ## <a name="footnotes"></a>Footnotes
 
-1. To avoid any confusion over the term "University", I adot Robert M. Pirsig definition of the term as quoted from "Zen and the Art of Motorcycle Maintainance":
+1. To avoid any confusion over the term "University", I adopt Robert M. Pirsig definition of the term as quoted from "Zen and the Art of Motorcycle Maintainance":
    
 "The real University, he said, has no specific location. It owns no property, pays no salaries and receives no material dues. The real University is a state of mind. It is that great heritage of rational thought that has been brought down to us through the centuries and which does not exist at any specific location. It's a state of mind which is regenerated throughout the centuries by a body of people who traditionally carry the title of professor, but even that title is not part of the real University. The real University is nothing less than the continuing body of reason itself.
 
