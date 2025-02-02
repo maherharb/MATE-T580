@@ -96,4 +96,10 @@ Educators interested in obtaining the .Rmd files used to create the lessons shou
 
 ## <a name="footnotes"></a>Footnotes
 
-1. To avoid any confusion over the term "University", [here's what I believe a University is](https://www.uow.edu.au/~nillsen/The_Two_Universities.html) (the words of Robert M. Pirsig). 
+1. To avoid any confusion over the term "University", I adot Robert M. Pirsig definition of the term as quoted from "Zen and the Art of Motorcycle Maintainance":
+   
+"The real University, he said, has no specific location. It owns no property, pays no salaries and receives no material dues. The real University is a state of mind. It is that great heritage of rational thought that has been brought down to us through the centuries and which does not exist at any specific location. It's a state of mind which is regenerated throughout the centuries by a body of people who traditionally carry the title of professor, but even that title is not part of the real University. The real University is nothing less than the continuing body of reason itself.
+
+In addition to this state of mind, 'reason,' there's a legal entity which is unfortunately called by the same name but which is quite another thing. This is a nonprofit corporation, a branch of the state with a specific address. It owns property, is capable of paying salaries, of receiving money and of responding to legislative pressures in the process.
+
+But this second university, the legal corporation, cannot teach, does not generate new knowledge or evaluate ideas. It is not the real University at all. It is just a church building, the setting, the location at which conditions have been made favorable for the real church to exist."
